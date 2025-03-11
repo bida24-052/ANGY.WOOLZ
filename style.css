@@ -1,0 +1,27 @@
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f4e1;
+            padding: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+        }
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            color: white;
+        }
+        .female-btn {
+            background-color: #ff69b4;
+        }
+        .male-btn {
+            background-color: #4682b4;
+        }

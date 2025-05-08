@@ -10,34 +10,34 @@
 
 :root {
   /* Colors */
-  white-color: #fff;
-  dark-color: #252525;
-  primary-color: #3b141c;
-  secondary-color: #f3961c;
-  light-pink-color: #faf4f5;
-  medium-gray-color: #ccc;
+  --white-color: #fff;
+  --dark-color: #252525;
+  --primary-color: #3b141c;
+  --secondary-color: #f3961c;
+  --light-pink-color: #faf4f5;
+  --medium-gray-color: #ccc;
 
    /* Font Size */
-   font-size-s: 0.9rem;
-    font-size-n: 1rem;
-    font-size-m: 1.12rem;
-     font-size-l: 1.5rem;        
-    font-size-xl: 2rem;
-     font-size-xxl: 2.3rem;
+   --font-size-s: 0.9rem;
+    --font-size-n: 1rem;
+    --font-size-m: 1.12rem;
+     --font-size-l: 1.5rem;        
+    --font-size-xl: 2rem;
+     --font-size-xxl: 2.3rem;
 
    /* Font Weight*/
-    font-weight-normal: 400;
-    font-weight-medium: 500;        
-    font-weight-semibold: 600;
-    font-weight-bold: 700;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;        
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 
 /* Border radius */
-border-radius-s: 8px;
-border-radius-m: 30px;
-border-radius-circle: 50%;
+--border-radius-s: 8px;
+--border-radius-m: 30px;
+--border-radius-circle: 50%;
 
 /* Site max width */
-site-max-width: 1300px;
+--site-max-width: 1300px;
 }
 
 /* Styling for the whole site  */
@@ -70,7 +70,7 @@ header {
    position: fixed;
    width: 100%;
    z-index: 5;         
-   background: var(primary-color);
+   background: var(--primary-color);
 }
 
 header .navbar {
@@ -81,9 +81,9 @@ padding: 20px;
 }          
 
 .navbar .nav-logo .logo-text {
- color: var(white-color); 
- font-size: var(font-size-xl);
- font-weight: var(font-weight-semibold);           
+ color: var(--white-color); 
+ font-size: var(--font-size-xl);
+ font-weight: var(--font-weight-semibold);           
 }
 
 .navbar .nav-menu {
@@ -92,15 +92,15 @@ padding: 20px;
 }
 .navbar .nav-menu .nav-link {
   padding: 10px 18px;
-  color: var(white-color); 
-  font-size: var(font-size-m);                    
-  border-radius: var(border-radius-m);
+  color: var(--white-color); 
+  font-size: var(--font-size-m);                    
+  border-radius: var(--border-radius-m);
   transition: 0.3s ease;          
 }
 
 .navbar .nav-menu .nav-link:hover {
- color: var(primary-color);             
- background: var(secondary-color);            
+ color: var(--primary-color);             
+ background: var(--secondary-color);            
             
 }
 
@@ -111,33 +111,33 @@ padding: 20px;
 /*Hero section styling */
 .hero-section {
 min-height: 100vh;
-backgraound: var(primary-color);
+backgraound: var(--primary-color);
 }
 
 .hero-section .section-content {
  dispaly: flex;
  align-items: center;
  min-height: 100vh;
- color: var(white-color);
+ color: var(--white-color);
  justify-content: space-between;  
 }
 .hero-section .hero-details .title {
- font-size: var(font-size-xxl);
- color: var(secondary-color);
+ font-size: var(--font-size-xxl);
+ color: var(--secondary-color);
  font-family: "Miniver", sans-serif; 
 }
 
 .hero-section .hero-details .subtitle {
  margin-top: 8px;
  max-width: 70%;
- font-size: var(font-size-xl);
- font-weight: var(font-weight-semibold);
+ font-size: var(--font-size-xl);
+ font-weight: var(--font-weight-semibold);
 }
 
 .hero-section .hero-details .description {
 max-width:70%;
 margin: 24px 0 40px;
-font-size: var(font-size-m);
+font-size: var(--font-size-m);
 }
 .hero-section .hero-details .bottons {
 dispaly: flex;
@@ -147,25 +147,25 @@ gap: 23px;
 .hero-section .hero-details .botton {
  padding: 10px 26px;
  border: 2px solid transparent;           
- color: var(primary-color);
- border-radius: var(border-radius-m);
- background-color: var(secondary-color);
- font-weight: var(font-weight-medium);
+ color: var(--primary-color);
+ border-radius: var(--border-radius-m);
+ background-color: var(--secondary-color);
+ font-weight: var(--font-weight-medium);
  transition: 0.3s ease;           
 }
 
 .hero-section .hero-details .botton:hover,
  .hero-section .hero-details .contact-us { 
-color: var(white-color);
-border-color: var(white-color);
+color: var(--white-color);
+border-color: var(--white-color);
 background: transparent;            
 }
 
 .hero-section .hero-details .
 contact-us:hover { 
-  color: var(primary-color);
-  border-color: var(secondary-color);
-  background: var(secondary-color);
+  color: var(--primary-color);
+  border-color: var(--secondary-color);
+  background: var(--secondary-color);
 }
             
 .hero-section .hero-image-wrapper {
@@ -176,10 +176,10 @@ contact-us:hover {
 /* Responsive media query code for max width 900px */
 @media screen and (max-width: 900px) {
    :root }
-  font-size-m: 1rem;
-  font-size-l: 1.5rem;
-  font-size-xl: 1.5rem;
-  font-size-xxl: 1.8rem; 
+  --font-size-m: 1rem;
+  --font-size-l: 1.5rem;
+   --font-size-xl: 1.5rem;
+  --font-size-xxl: 1.8rem; 
 }
 
 body.show-mobile-menu header::before {
@@ -196,7 +196,7 @@ body.show-mobile-menu header::before {
 
 .navbar :where(#menu-close-button, #menu-open-button) {
   display: block;
-  font-size: var(font-size-1);
+  font-size: var(--font-size-1);
 }
 
 .navbar #menu-close-button {
@@ -205,7 +205,7 @@ body.show-mobile-menu header::before {
   top: 30px;
 }
 .navbar #menu-open-button {
- color: var(white-color);
+ color: var(--white-color);
 }
 
   .navbar .nav-menu {
@@ -215,7 +215,7 @@ body.show-mobile-menu header::before {
     top: 0;
     width: 300px;
     height: 100%;
-    background: var(white-color);
+    background: var(--white-color);
     transition: left 0.2s ease;
   }
 
@@ -228,7 +228,7 @@ body.show-mobile-menu .navbar .nav-menu {
   color: var(dark color);
   display: block;
   margin-top: 17px;
-  font-size: var(font-size-1);
+  font-size: var(--font-size-1);
   }
 
 .hero-section .section-content {
